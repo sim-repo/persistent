@@ -1,0 +1,71 @@
+prepare:
+npm install npm@latest -g
+
+
+
+install angular-material2:
+1. choose angular-cli
+2. $ npm install --save @angular/material    (or best npm install https://github.com/angular/material2-builds.git)
+2. $ npm install — save @angular2-material/core 
+                        @angular2-material/button 
+			@angular2-material/card @angular2-material/icon
+
+
+(see package.json)
+3. npm install hammerjs --save 
+4. add <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script> to index.html
+5. add to styles.css:
+@import '~https://fonts.googleapis.com/icon?family=Material+Icons';
+
+@import '~@angular/material/core/theming/prebuilt/indigo-pink.css';
+
+
+6. 
+import { MaterialModule } from '@angular/material';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    MaterialModule.forRoot()
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+
+
+
+
+change pallete:
+
+1. add to src dir <file name>.scss.
+
+2. add code:
+
+@import '~@angular/material/core/theming/all-theme';
+
+@include md-core();
+
+$primary: md-palette($md-blue,600);
+$accent: md-palette($md-orange,600);
+
+$theme: md-light-theme($primary, $accent);
+
+@include angular-material-theme($theme);
+
+3. in angular-cli.json add:
+ 
+"styles": [
+        "styles.css",
+        "<file name>.scss"
+      ],
+
+4. reboot
+
+
+Select pallete:
+node_modules\@angular\material\core\theming\_palette.scss

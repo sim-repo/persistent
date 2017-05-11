@@ -1,0 +1,14 @@
+TO_DO
+1.Hibernate Batch
+http://www.tutorialspoint.com/hibernate/hibernate_batch_processing.htm 
+https://docs.jboss.org/hibernate/orm/3.3/reference/en/html/batch.html 
+2.Property
+https://habrahabr.ru/post/156731/
+3.Thread
+http://docs.spring.io/spring/docs/current/spring-framework-reference/html/scheduling.html
+http://thebrainyprofessionals.com/2013/05/06/fixedthreadpool-in-java/
+http://howtodoinjava.com/core-java/multi-threading/how-to-use-blockingqueue-and-threadpoolexecutor-in-java/
+http://www.nurkiewicz.com/2014/11/executorservice-10-tips-and-tricks.html
+
+4.Learn
+http://www.wisdomweb.ru/JQ/plugin.php

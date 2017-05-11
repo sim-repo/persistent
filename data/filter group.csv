@@ -1,0 +1,29 @@
+id,model_class,control_type,caption,model_field,icon_class
+admin_accumulated,Admin,checkbox,Аккумулированность,searching_tag4,NULL
+admin_aspect,Admin,checkbox,Аспект,searching_tag3,NULL
+admin_character,Admin,checkbox,Характер,searching_tag2,NULL
+admin_criticality,Admin,checkbox,Важность,searching_tag1,NULL
+api_item_content,ApiItem,checkbox,Type,searching_tag10,NULL
+api_modules,Api,checkbox,Module,searching_tag2,NULL
+api_type,Api,checkbox,"Integration ",searching_tag1,NULL
+fg_alcohol_type,Dimension,checkbox,"Тип Алкоголя",searching_tag1,NULL
+fg_alco_type,Dimension,checkbox,"Тип Вина",searching_tag9,NULL
+fg_country,Dimension,checkbox,"Страна Происхождения",searching_tag2,NULL
+fg_defvisible,Dimension,checkbox,Скрыть,searching_tag11,NULL
+fg_hierarchy,Dimension,checkbox,Иерархии,searching_tag12,NULL
+fg_price,Dimension,"range checkbox",Цена,searching_tag6,NULL
+fg_producer,Dimension,checkbox,Производитель,searching_tag5,NULL
+fg_sort,Dimension,checkbox,"Сорт Винограда",searching_tag10,NULL
+fg_sugar,Dimension,checkbox,"Содержание Сахара",searching_tag8,NULL
+fg_volume,Dimension,checkbox,"Максимальный Объем",searching_tag7,NULL
+fg_wine_color,Dimension,checkbox,Цвет,searching_tag3,NULL
+fg_year_maximum,Dimension,"maximum slider","Год Производства",searching_tag4,NULL
+fg_year_minimum,Dimension,"minimum slider",,searching_tag4,NULL
+news_changes,News,checkbox,Changes,searching_tag3,query_builder
+news_feature_area,News,checkbox,Module,searching_tag2,view_module
+news_type,News,checkbox,Type,searching_tag1,filter_none
+reports_changes,UserReports,checkbox,Changes,searching_tag4,query_builder
+reports_freq,UserReports,checkbox,Popularity,searching_tag3,thumb_up
+reports_integratioin,UserReports,checkbox,"Endpoint Transfers",searching_tag5,leak_add
+reports_module,UserReports,checkbox,Module,searching_tag1,view_module
+reports_type,UserReports,checkbox,Type,searching_tag2,text_fields

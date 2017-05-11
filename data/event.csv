@@ -1,0 +1,12 @@
+event_id,component_id,action_group_id,action_id,output_action_id
+event-filter-admin,AdminComponent,1,5,NULL
+event-filter-api,ApiComponent,1,5,NULL
+event-filter-api-item,ApiItemComponent,1,5,NULL
+event-filter-bus,BusinessComponent,1,5,NULL
+event-filter-dimension,DimensionCardComponent,1,5,NULL
+event-filter-news,NewsComponent,1,5,NULL
+event-reemit-sidenav,SidenavComponent,2,5,NULL
+event-refresh-apieditor,ApiEditorComponent,5,1,NULL
+event-refresh-news,NewsComponent,3,0,NULL
+event-refresh-sidenav,SidenavComponent,2,0,NULL
+event-tab-refresh,TabComponent,4,0,NULL

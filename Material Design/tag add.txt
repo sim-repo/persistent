@@ -1,0 +1,13 @@
+http://localhost:8077/front/async/add/json/nav/tag
+
+
+{
+  "tag":"primer",
+   "sqlTemplate":"EXEC sp_test_Primer",
+   "classificatorId":"1.0.0.0",
+   "params":[
+         {"paramName":"@CustNo","paramDesc":"клиент имя"},
+         {"paramName":"@ShipmentType","paramDesc":"тип отгрузки"},
+         {"paramName":"@CompanyName","paramDesc":"компания название"}
+    ]
+}

@@ -1,0 +1,166 @@
+CREATE TABLE `bus api` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(250) DEFAULT NULL,
+  `body` varchar(1024) DEFAULT NULL,
+  `subtitle` varchar(45) DEFAULT NULL,
+  `link` varchar(45) DEFAULT NULL,
+  `img_fullpath` varchar(80) DEFAULT NULL,
+  `searching_tag1` varchar(45) DEFAULT NULL,
+  `searching_tag2` varchar(45) DEFAULT NULL,
+  `searching_tag3` varchar(45) DEFAULT NULL,
+  `searching_tag4` varchar(45) DEFAULT NULL,
+  `searching_tag5` varchar(45) DEFAULT NULL,
+  `searching_tag6` varchar(45) DEFAULT NULL,
+  `searching_tag7` varchar(45) DEFAULT NULL,
+  `searching_tag8` varchar(45) DEFAULT NULL,
+  `searching_tag9` varchar(45) DEFAULT NULL,
+  `searching_tag10` varchar(45) DEFAULT NULL,
+  `searching_tag11` varchar(45) DEFAULT NULL,
+  `searching_tag12` varchar(45) DEFAULT NULL,
+  `searching_tag13` varchar(45) DEFAULT NULL,
+  `searching_tag14` varchar(45) DEFAULT NULL,
+  `searching_tag15` varchar(45) DEFAULT NULL,
+  `searching_tag16` varchar(45) DEFAULT NULL,
+  `searching_tag17` varchar(45) DEFAULT NULL,
+  `searching_tag18` varchar(45) DEFAULT NULL,
+  `searching_tag19` varchar(45) DEFAULT NULL,
+  `searching_tag20` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `bus api item` (
+  `id` varchar(45) NOT NULL,
+  `top_priority` int(11) DEFAULT NULL,
+  `title` varchar(45) DEFAULT NULL,
+  `src_endpoint_id` varchar(45) DEFAULT NULL,
+  `html_src_output` varchar(1024) DEFAULT NULL,
+  `html_esb_ctrl` varchar(1024) DEFAULT NULL,
+  `html_dst_input` varchar(1024) DEFAULT NULL,
+  `html_dst_reply` varchar(1024) DEFAULT NULL,
+  `html_any_xsmall` varchar(1024) DEFAULT NULL,
+  `html_any_small` varchar(2048) DEFAULT NULL,
+  `html_any_medium` varchar(4096) DEFAULT NULL,
+  `html_any_big` varchar(8192) DEFAULT NULL,
+  `searching_tag1` varchar(45) DEFAULT NULL,
+  `searching_tag2` varchar(45) DEFAULT NULL,
+  `searching_tag3` varchar(45) DEFAULT NULL,
+  `searching_tag4` varchar(45) DEFAULT NULL,
+  `searching_tag5` varchar(45) DEFAULT NULL,
+  `searching_tag6` varchar(45) DEFAULT NULL,
+  `searching_tag7` varchar(45) DEFAULT NULL,
+  `searching_tag8` varchar(45) DEFAULT NULL,
+  `searching_tag9` varchar(45) DEFAULT NULL,
+  `searching_tag10` varchar(45) DEFAULT NULL,
+  `searching_tag11` varchar(45) DEFAULT NULL,
+  `searching_tag12` varchar(45) DEFAULT NULL,
+  `searching_tag13` varchar(45) DEFAULT NULL,
+  `searching_tag14` varchar(45) DEFAULT NULL,
+  `searching_tag15` varchar(45) DEFAULT NULL,
+  `searching_tag16` varchar(45) DEFAULT NULL,
+  `searching_tag17` varchar(45) DEFAULT NULL,
+  `searching_tag18` varchar(45) DEFAULT NULL,
+  `searching_tag19` varchar(45) DEFAULT NULL,
+  `searching_tag20` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `idx_bus api item_searching_tag1_searching_tag2` (`searching_tag1`,`searching_tag2`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE `site action group` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name_UNIQUE` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `site actions` (
+  `action_group_id` int(11) NOT NULL,
+  `action_id` int(11) NOT NULL,
+  `name` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`action_group_id`,`action_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `site admin` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(250) DEFAULT NULL,
+  `body` varchar(4096) DEFAULT NULL,
+  `subtitle` varchar(45) DEFAULT NULL,
+  `link` varchar(45) DEFAULT NULL,
+  `img_fullpath` varchar(45) DEFAULT NULL,
+  `searching_tag1` varchar(45) DEFAULT NULL,
+  `searching_tag2` varchar(45) DEFAULT NULL,
+  `searching_tag3` varchar(45) DEFAULT NULL,
+  `searching_tag4` varchar(45) DEFAULT NULL,
+  `searching_tag5` varchar(45) DEFAULT NULL,
+  `searching_tag6` varchar(45) DEFAULT NULL,
+  `searching_tag7` varchar(45) DEFAULT NULL,
+  `searching_tag8` varchar(45) DEFAULT NULL,
+  `searching_tag9` varchar(45) DEFAULT NULL,
+  `searching_tag10` varchar(45) DEFAULT NULL,
+  `searching_tag11` varchar(45) DEFAULT NULL,
+  `searching_tag12` varchar(45) DEFAULT NULL,
+  `searching_tag13` varchar(45) DEFAULT NULL,
+  `searching_tag14` varchar(45) DEFAULT NULL,
+  `searching_tag15` varchar(45) DEFAULT NULL,
+  `searching_tag16` varchar(45) DEFAULT NULL,
+  `searching_tag17` varchar(45) DEFAULT NULL,
+  `searching_tag18` varchar(45) DEFAULT NULL,
+  `searching_tag19` varchar(45) DEFAULT NULL,
+  `searching_tag20` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `site event` (
+  `event_id` varchar(100) NOT NULL,
+  `component_id` varchar(100) NOT NULL,
+  `action_group_id` int(11) DEFAULT NULL,
+  `action_id` int(11) DEFAULT NULL,
+  `output_action_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`event_id`,`component_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `site filter defaults` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `filter_relations_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `site filter group` (
+  `id` varchar(50) NOT NULL,
+  `model_class` varchar(45) NOT NULL,
+  `control_type` varchar(45) DEFAULT NULL,
+  `caption` varchar(50) DEFAULT NULL,
+  `model_field` varchar(50) DEFAULT NULL,
+  `icon_class` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`,`model_class`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `site filter item` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `model_field` varchar(45) DEFAULT NULL,
+  `type` varchar(45) DEFAULT NULL,
+  `filter_group_id` varchar(45) DEFAULT NULL,
+  `value` varchar(45) DEFAULT NULL,
+  `min_value` int(11) DEFAULT NULL,
+  `max_value` int(11) DEFAULT NULL,
+  `value_caption` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=102 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `site filter relations` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `initiator_model_class` varchar(45) DEFAULT NULL,
+  `model_class_id` varchar(45) DEFAULT NULL,
+  `filtered_model_class` varchar(45) DEFAULT NULL,
+  `filter_item_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `site tab` (
+  `id` varchar(40) NOT NULL,
+  `caption` varchar(45) DEFAULT NULL,
+  `searching_tag1` varchar(45) DEFAULT NULL,
+  `filter_model_class` varchar(45) DEFAULT NULL,
+  `icon_class` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

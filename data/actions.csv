@@ -1,0 +1,13 @@
+action_group_id,action_id,name
+1,5,FILTER
+2,1,EMIT
+2,2,ROUTE
+2,3,SHOW
+2,4,HIDE
+2,5,FILTER
+4,1,EMIT
+4,2,ROUTE
+4,3,SHOW
+4,4,HIDE
+4,5,FILTER
+5,1,EMIT

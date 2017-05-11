@@ -1,0 +1,6 @@
+id,title,body,subtitle,link,img_fullpath,searching_tag1,searching_tag2,searching_tag3,searching_tag4,searching_tag5,searching_tag6,searching_tag7,searching_tag8,searching_tag9,searching_tag10,searching_tag11,searching_tag12,searching_tag13,searching_tag14,searching_tag15,searching_tag16,searching_tag17,searching_tag18,searching_tag19,searching_tag20
+1,NAV-DxBx,NULL,NULL,dxbx,../../assets/img/news/dxbx.png,"pull only",test,test,test,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+2,NAV-SimpleWine,NULL,NULL,btx,../../assets/img/news/simple-wine.png,mixed,test,test,test,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+3,NAV-iSimple,NULL,NULL,isimple,../../assets/img/news/simple.png,"pull only",test,test,test,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+4,NAV-Винотека,NULL,NULL,winestore,../../assets/img/news/1c.png,"pull only",test,test,test,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+5,NAV-Oktell,NULL,NULL,oktell,../../assets/img/news/oktell.png,mixed,test,test,test,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL

@@ -1,0 +1,1046 @@
+id,top_priority,title,src_endpoint_id,html_src_output,html_esb_ctrl,html_dst_input,html_dst_reply,html_any_xsmall,html_any_small,html_any_medium,html_any_big,searching_tag1,searching_tag2,searching_tag3,searching_tag4,searching_tag5,searching_tag6,searching_tag7,searching_tag8,searching_tag9,searching_tag10,searching_tag11,searching_tag12,searching_tag13,searching_tag14,searching_tag15,searching_tag16,searching_tag17,searching_tag18,searching_tag19,searching_tag20
+1,1,"проверка соединения",NAV,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">    
+</head>
+<body>
+<pre>
+USE [SimpleERP]
+GO
+EXEC [dbo].[web_dxbx_getConnectionBody] 
+</pre>
+</body>
+</html>","<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">    
+</head>
+<body>
+	http://msk10websvc2:8888/jservice/dxbx/connection   
+</body>
+</html>","<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">    
+</head>
+<body>
+Docs In Boxs: https://dxbx.ru/api/json/v2
+</body>
+</html>","<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">    
+</head>
+<body>
+<pre>
+{
+  ""result"": ""OK""
+}
+</pre>
+</body>
+</html>",NULL,NULL,NULL,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <title>Title</title>
+	<style type=""text/css"">
+.key {  
+  color: #336; 
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+}
+.comment {  
+  color: #8e0058; 
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+}
+pre {
+  background-color: #fcfcfc;
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+  margin-bottom: 10px;
+  max-height: 600px;
+  min-width: 40px;
+  max-width: 1900px;
+  white-space: pre-wrap;       /* CSS 3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  padding: 5px;
+}
+</style>
+</head>
+<body>
+<pre>
+{
+  <span class=""key"">""clazz""</span>: ""com.simple"", 
+  <span class=""key"">""juuid""</span>: ""FFB71A10-B97A-4092-A315-662318A5ACD3"",
+  <span class=""key"">""eventId""</span>: ""OKTELL_EMPLOYEE"",
+  <span class=""key"">""body"":</span> ""{	
+		""employees"": {
+			""employee"": {
+				""Manager_Employee"": ""С"",<span class=""comment"">-- комментарий #1</span>
+				""IDM"": ""EMP03580"",<span class=""comment"">-- комментарий #2</span>
+				""CFO"": ""СБ-01-100"",<span class=""comment"">-- комментарий #3</span>
+				""Name"": ""Клименков Алексей Владимирович""<span class=""comment"">-- комментарий#4</span>
+			}
+		}
+	}"",    
+  <span class=""key"">""url"":</span> ""http://msk10oktell1/inbound_message"",
+  <span class=""key"">""contentType"":</span> ""ApplicationJson""
+}  
+</pre>
+</body>
+</html>",NAV,dxbx,tset,tset,tset,tset,test,test,test,"contract description",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+10,0,"схема взаимодействия по справочникам5",NAV,NULL,NULL,NULL,NULL,NULL,"
+<!DOCTYPE html>
+ <html lang=""en"">
+ <head>
+     <meta charset=""UTF-8"">    
+ </head>
+ <body>
+   <img src=""../../assets/img/api/oktell1.png"" width=""747"" height=""400"" 
+ </body>
+ </html>",NULL,NULL,NAV,oktell,btx,dxbx,isimple,crm,one,test,test,schemes,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+11,0,"схема взаимодействия по документам",NAV,NULL,NULL,NULL,NULL,NULL,"
+<!DOCTYPE html>
+ <html lang=""en"">
+ <head>
+     <meta charset=""UTF-8"">    
+ </head>
+ <body>
+   <img src=""../../assets/img/api/oktell2.png"" width=""795"" height=""400"" 
+ </body>
+ </html>",NULL,NULL,NAV,oktell,test,test,test,test,test,test,test,schemes,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+2,2,"проверка юр.лиц",NAV,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NAV,dxbx,test,tset,test,test,test,test,test,"contract description",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+276d4bf9-e312-afd9-d3df-b1840d307d56,1,"Hand-book: тип вина",NAV,"<!DOCTYPE html>
+<!DOCTYPE html>
+ <html lang=""en"">
+ <head>
+     <meta charset=""UTF-8"">    
+ </head>
+ <body>
+ <pre>
+ USE [SimpleERP]
+ GO
+ EXEC [dbo].[web_getHandBook ] @_type = 14
+ </pre>
+ </body>
+ </html>",NULL,NULL,NULL,NULL,NULL,NULL,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <title>Title</title>
+	<style type=""text/css"">
+.key {  
+  color: #336; 
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+}
+.com {  
+  color: #8e0058; 
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+}
+pre {
+  background-color: #fcfcfc;
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+  margin-bottom: 10px;
+  max-height: 600px;
+  min-width: 40px;
+  max-width: 1900px;
+  white-space: pre-wrap;       /* CSS 3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  padding: 5px;
+}
+</style>
+</head>
+<body>
+<pre>
+структура сообщения:
+[
+	{
+		""Description"": ""тихое"",
+		""Code"": ""1""
+	}, {
+		""Description"": ""игристое"",
+		""Code"": ""2""
+	}, {
+		""Description"": ""крепленое"",
+		""Code"": ""3""
+	}, {
+		""Description"": ""шипучее"",
+		""Code"": ""4""
+	}, {
+		""Description"": ""специальное"",
+		""Code"": ""5""
+	}, {
+		""Description"": ""ликерное"",
+		""Code"": ""6""
+	}
+]
+</pre>
+</body>
+</html>",NAV,btx,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+3,3,"отправка инвойса",NAV,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NAV,dxbx,tset,tset,tset,test,test,test,test,"contract description",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+3448dc7b-49a1-3aa6-4b1a-4e4516f51ac2,1,"Hand-book: тип упаковки",NAV,"<!DOCTYPE html>
+<!DOCTYPE html>
+ <html lang=""en"">
+ <head>
+     <meta charset=""UTF-8"">    
+ </head>
+ <body>
+ <pre>
+ USE [SimpleERP]
+ GO
+ EXEC [dbo].[web_getHandBook ] @_type = 1
+ </pre>
+ </body>
+ </html>","<!DOCTYPE html>
+<!DOCTYPE html>
+ <html lang=""en"">
+ <head>
+     <meta charset=""UTF-8"">    
+ </head>
+ <body>
+ <pre>
+http://msk10websvc2:8888/jservice/handbook/pack_type
+ </pre>
+ </body>
+ </html>",NULL,NULL,NULL,NULL,NULL,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <title>Title</title>
+	<style type=""text/css"">
+.key {  
+  color: #336; 
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+}
+.com {  
+  color: #8e0058; 
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+}
+pre {
+  background-color: #fcfcfc;
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+  margin-bottom: 10px;
+  max-height: 600px;
+  min-width: 40px;
+  max-width: 1900px;
+  white-space: pre-wrap;       /* CSS 3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  padding: 5px;
+}
+</style>
+</head>
+<body>
+<pre>
+структура сообщения:
+[	{
+		""Description"": ""Алюминий"",
+		""Code"": ""АЛЮМИНИЙ""
+	}, {
+		""Description"": ""Дерево"",
+		""Code"": ""ДЕРЕВО""
+	}, {
+		""Description"": ""Картон/металл"",
+		""Code"": ""КАРТОН/МЕТАЛЛ""
+	}
+]			
+</pre>
+</body>
+</html>
+",NAV,btx,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+5,2,"карточка сотрудника",NAV,"<!DOCTYPE html>
+<!DOCTYPE html>
+ <html lang=""en"">
+ <head>
+     <meta charset=""UTF-8"">    
+ </head>
+ <body>
+ <pre>
+ USE [SimpleERP]
+ GO
+ EXEC [dbo].[web_callcenter_getEmployee]
+ </pre>
+ </body>
+ </html>","<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">    
+</head>
+<body>
+<pre>
+Инициатор: OKTELL
+GET-запрос:
+http://msk10websvc2:8888/jservice/cc/employee 
+</pre>
+</body>
+</html>","<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">    
+</head>
+<body>
+OKTELL: метод неизвестен
+</body>
+</html>",NULL,NULL,NULL,NULL,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <title>Title</title>
+	<style type=""text/css"">
+.key {  
+  color: #336; 
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+}
+.comment {  
+  color: #8e0058; 
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+}
+pre {
+  background-color: #fcfcfc;
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+  margin-bottom: 10px;
+  max-height: 600px;
+  min-width: 40px;
+  max-width: 1900px;
+  white-space: pre-wrap;       /* CSS 3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  padding: 5px;
+}
+</style>
+</head>
+<body>
+<pre>
+{
+  <span class=""key"">""clazz"":</span> ""com.simple.server.domain.contract.UniMinMsg"",
+  <span class=""key"">""juuid"":</span> ""FFB71A10-B97A-4092-A315-662318A5ACD3"",
+  <span class=""key"">""eventId"":</span> ""OKTELL_EMPLOYEE"",
+  <span class=""key"">""body"":</span> ""{
+	""employees"":{
+		""employee"":{
+			<span class=""key"">""Manager_Employee"":</span>""С"",
+			<span class=""key"">""IDM"":</span>""EMP03580"",
+			<span class=""key"">""CFO"":</span>""СБ-01-100"",
+			<span class=""key"">""Name"":</span>""Клименков Алексей Владимирович""
+					}
+		}
+   }"",
+  <span class=""key"">""url"":</span> ""http://msk10oktell1/inbound_message"",
+  <span class=""key"">""contentType"":</span> ""ApplicationJson""
+}
+  
+</pre>
+</body>
+</html>",NAV,oktell,tset,tset,test,test,test,test,test,"contract description",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+6,3,"контакты клиента",NAV,"<!DOCTYPE html>
+<!DOCTYPE html>
+ <html lang=""en"">
+ <head>
+     <meta charset=""UTF-8"">    
+ </head>
+ <body>
+ <pre>
+ USE [SimpleERP]
+ GO
+ EXEC [dbo].[web_callcenter_getContactCustomer]
+ </pre>
+ </body>
+ </html>","<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">    
+</head>
+<body>
+<pre>
+Инициатор: OKTELL
+GET-запрос:
+http://msk10websvc2:8888/jservice/cc/contact_customer
+</pre>
+</body>
+</html>","<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">    
+</head>
+<body>
+OKTELL: метод неизвестен
+</body>
+</html>",NULL,NULL,NULL,NULL,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <title>Title</title>
+	<style type=""text/css"">
+.key {  
+  color: #336; 
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+}
+.comment {  
+  color: #8e0058; 
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+}
+pre {
+  background-color: #fcfcfc;
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+  margin-bottom: 10px;
+  max-height: 600px;
+  min-width: 40px;
+  max-width: 1900px;
+  white-space: pre-wrap;       /* CSS 3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  padding: 5px;
+}
+</style>
+</head>
+<body>
+<pre>
+{
+  <span class=""key"">""clazz""</span>: ""com.simple.server.domain.contract.UniMinMsg"",
+   <span class=""key"">""juuid""</span>: ""DEA244DF-6F11-49A5-A18F-4B574619DAC8"",
+   <span class=""key"">""eventId""</span>: ""OKTELL_CONTACT_CUST"",
+   <span class=""key"">""body""</span>: ""{
+		""customers"": {
+			""customer"": {
+				""Type"": ""e"",<span class=""comment"">-- тип-константа ""e""</span>
+				""IDM"": ""К42627"",<span class=""comment"">-- код менеджера</span>
+				""Value"": ""bm.pablo84@gmail.com"",<span class=""comment"">-- e-mail</span>
+				""Code"": ""К42627_1"",<span class=""comment"">-- комментарий#1</span>
+				""Source"": ""N"",<span class=""comment"">-- комментарий#1</span>			
+			}
+		}
+	}"",
+   <span class=""key"">""url""</span>: ""http://msk10oktell1/inbound_message"",
+   <span class=""key"">""contentType""</span>: ""ApplicationJson""
+}
+  
+</pre>
+</body>
+</html>",NAV,oktell,tset,tset,tset,test,test,test,test,"contract description",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+7,4,"контакты сотрудника",NAV,"<!DOCTYPE html>
+<!DOCTYPE html>
+ <html lang=""en"">
+ <head>
+     <meta charset=""UTF-8"">    
+ </head>
+ <body>
+ <pre>
+ USE [SimpleERP]
+ GO
+ EXEC [dbo].[web_callcenter_getEmployee]
+ </pre>
+ </body>
+ </html>","<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">    
+</head>
+<body>
+<pre>
+Инициатор: OKTELL
+GET-запрос:
+http://msk10websvc2:8888/jservice/cc/contact_employee
+</pre>
+</body>
+</html>","<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">    
+</head>
+<body>
+OKTELL: метод неизвестен
+</body>
+</html>",NULL,NULL,NULL,NULL,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <title>Title</title>
+	<style type=""text/css"">
+.key {  
+  color: #336; 
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+}
+.comment {  
+  color: #8e0058; 
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+}
+pre {
+  background-color: #fcfcfc;
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+  margin-bottom: 10px;
+  max-height: 600px;
+  min-width: 40px;
+  max-width: 1900px;
+  white-space: pre-wrap;       /* CSS 3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  padding: 5px;
+}
+</style>
+</head>
+<body>
+<pre>
+{
+   <span class=""key"">""clazz""</span>: ""com.simple.server.domain.contract.UniMinMsg"",
+   <span class=""key"">""juuid""</span>: ""DEA244DF-6F11-49A5-A18F-4B574619DAC8"",
+   <span class=""key"">""eventId""</span>: ""OKTELL_CONTACT_EMPLOYEE"",
+   <span class=""key"">""body""</span>: ""{
+		""customers"": {
+			""customer"": {
+				""Type"": ""e"",<span class=""comment"">-- тип-константа ""e""</span>
+				""IDM"": ""К42627"",<span class=""comment"">-- код менеджера</span>
+				""Value"": ""bm.pablo84@gmail.com"",<span class=""comment"">--e-mail</span>
+				""Code"": ""К42627_1"",<span class=""comment"">-- комментарий#1</span>
+				""Source"": ""N"",<span class=""comment"">-- комментарий#1</span>			
+			}
+		}
+	}"",
+   <span class=""key"">""url""</span>: ""http://msk10oktell1/inbound_message"",
+   <span class=""key"">""contentType""</span>: ""ApplicationJson""
+}
+  
+</pre>
+</body>
+</html>",NAV,oktell,tset,tset,tset,test,test,test,test,"contract description",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+8,5,"заказ продажи",NAV,"<!DOCTYPE html>
+<!DOCTYPE html>
+ <html lang=""en"">
+ <head>
+     <meta charset=""UTF-8"">    
+ </head>
+ <body>
+ <pre>
+ USE [SimpleERP]
+ GO
+ EXEC [dbo].[web_callcenter_getSorder]
+ </pre>
+ </body>
+ </html>","<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">    
+</head>
+<body>
+<pre>
+Инициатор: NAV
+POST-запрос:
+http://msk10websvc2:8888/front/async/json/pub/uni
+</pre>
+</body>
+</html>","<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">    
+</head>
+<body>
+http://msk10oktell1/inbound_message
+</body>
+</html>",NULL,NULL,NULL,NULL,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <title>Title</title>
+	<style type=""text/css"">
+.key {  
+  color: #336; 
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+}
+.com {  
+  color: #8e0058; 
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+}
+pre {
+  background-color: #fcfcfc;
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+  margin-bottom: 10px;
+  max-height: 600px;
+  min-width: 40px;
+  max-width: 1900px;
+  white-space: pre-wrap;       /* CSS 3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  padding: 5px;
+}
+</style>
+</head>
+<body>
+<pre>
+{
+	<span class=""key"">""clazz""</span>: ""com.simple.server.domain.contract.UniMinMsg"",
+	<span class=""key"">""juuid""</span>: ""73C2B432-6B2B-4C31-AD2F-3964F5539CEF"",
+	<span class=""key"">""eventId""</span>: ""OKTELL_SORDER"",
+    <span class=""key"">""url""</span>: ""http://msk10oktell1/inbound_message"",
+    <span class=""key"">""contentType""</span>: ""ApplicationJson""
+	<span class=""key"">""body""</span>: ""{
+
+		"" sorders "":{
+			"" sorder "":{
+					<span class=""key"">"" address ""</span>:"" Кожевническая ул.,д.1,стр.1 "", <span class=""com"">--комментарий#1</span>
+					<span class=""key"">"" releaseDate ""</span>:"" 2017 - 04 - 13T00: 00: 00 "",<span class=""com"">--комментарий#1</span>
+					<span class=""key"">"" companyName ""</span>:"" СИМПЛ "",<span class=""com"">--комментарий#1</span>
+					<span class=""key"">"" customerCardId ""</span>:"" "",<span class=""com"">--комментарий#1</span>
+					<span class=""key"">"" sorderNo ""</span>:"" SL00117080143 "",<span class=""com"">--комментарий#1</span>
+					<span class=""key"">"" deliveryTimeTo ""</span>:"" 1754 - 01 - 01T16: 00: 00 "",<span class=""com"">--комментарий#1</span>
+					<span class=""key"">"" preliminaryOrder ""</span>:0,<span class=""com"">--комментарий#1</span>
+					<span class=""key"">"" customerName ""</span>:"" ООО \ ""АЛЬЯНС\"" "",<span class=""com"">--комментарий#1</span>
+					<span class=""key"">"" shipmentMethodCode ""</span>:"" ДОСТАВКА "",<span class=""com"">--комментарий#1</span>
+					<span class=""key"">"" deliveryTimeFrom ""</span>:"" 1754 - 01 - 01T10: 00: 00 "",<span class=""com"">--комментарий#1</span>
+					<span class=""key"">"" sorderSource ""</span>:"" МНДЖ_БЛАНК "",<span class=""com"">--комментарий#1</span>
+					<span class=""key"">"" activityCompany ""</span>:"" "",<span class=""com"">--комментарий#1</span>
+					<span class=""key"">"" Type ""</span>:"" Официальная "",<span class=""com"">--комментарий#1</span>
+					<span class=""key"">"" UnloadPlaceId ""</span>:"" "",<span class=""com"">--комментарий#1</span>
+					<span class=""key"">"" salespersonId ""</span>:"" КОРЖ "",<span class=""com"">--комментарий#1</span>
+					<span class=""key"">"" sorderDate ""</span>:"" 2017 - 04 - 14T00: 00: 00 "",<span class=""com"">--комментарий#1</span>
+					<span class=""key"">"" shipToCode ""</span>:3,<span class=""com"">--комментарий#1</span>
+					<span class=""key"">"" customerId ""</span>:"" К05946 "",<span class=""com"">--комментарий#1</span>
+					<span class=""key"">"" shipmentDate ""</span>:"" 2017 - 04 - 14T00: 00: 00 "",<span class=""com"">--комментарий#1</span>
+					<span class=""key"">"" Statusnav ""</span>:"" Выпущен "",<span class=""com"">--комментарий#1</span>
+					<span class=""key"">"" paymentTerms ""</span>:"" 15 ДНЕЙ "",<span class=""com"">--комментарий#1</span>
+					"" slines "":{
+							"" sLine "":[
+										{<span class=""key"">"" unitPrice ""</span>:460,<span class=""com"">--комментарий#1</span>
+										 <span class=""key"">"" quantity ""</span>:2,<span class=""com"">--комментарий#1</span>
+										 <span class=""key"">"" unitOfMeasure ""</span>:"" БУТ "",<span class=""com"">--комментарий#1</span>
+										 <span class=""key"">"" variantCode ""</span>:"" ОРИГИНАЛ "",<span class=""com"">--комментарий#1</span>
+										 <span class=""key"">"" description ""</span>:"" Вино Таи Пино Гриджо(Венето)2015,0.75 л,12 % "",<span class=""com"">--комментарий#1</span>
+										 <span class=""key"">"" lineDiscountPercent ""</span>:0,<span class=""com"">--комментарий#1</span>
+										 <span class=""key"">"" itemNo ""</span>:99903,<span class=""com"">--комментарий#1</span>
+										 <span class=""key"">"" outerLineId ""</span>:10000,<span class=""com"">--комментарий#1</span>
+										 <span class=""key"">"" lineAmount ""</span>:920<span class=""com"">--комментарий#1</span>
+										 },
+										 {<span class=""key"">"" unitPrice ""</span>:590,
+										  <span class=""key"">"" quantity ""</span>:3,
+										  <span class=""key"">"" unitOfMeasure ""</span>:"" БУТ "",
+										  <span class=""key"">"" variantCode ""</span>:"" "",
+										  <span class=""key"">"" description ""</span>:"" Вино Кьянти 2015,0.75 л,13 % ,Италия,Тоскана,"",
+										  <span class=""key"">"" lineDiscountPercent ""</span>:0,
+										  <span class=""key"">"" itemNo ""</span>:101566,
+										  <span class=""key"">"" outerLineId ""</span>:40000,
+										  <span class=""key"">"" lineAmount ""</span>:"" 1,770.00 ""
+										  }
+									]
+
+								}
+						}
+
+					}
+	}""
+					
+}
+</pre>
+</body>
+</html>",NAV,oktell,one,tset,tset,test,test,test,test,"contract description",NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+9,0,"общая схема взаимодействия",NAV,NULL,NULL,NULL,NULL,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">    
+</head>
+<body>
+  <img src=""../../assets/img/api/dxbx.png"" width=""730"" height=""520"" 
+</body>
+</html>",NULL,NULL,NULL,NAV,dxbx,test,test,test,test,test,test,test,schemes,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+b8ddd7f4-3688-a5ad-ed5e-4e3b24dec0a5,0,"Hand-book: цвета",NAV,"<!DOCTYPE html>
+<!DOCTYPE html>
+ <html lang=""en"">
+ <head>
+     <meta charset=""UTF-8"">    
+ </head>
+ <body>
+ <pre>
+ USE [SimpleERP]
+ GO
+ EXEC [dbo].[web_getHandBook ] @_type = 0
+ </pre>
+ </body>
+ </html>","<!DOCTYPE html>
+<!DOCTYPE html>
+ <html lang=""en"">
+ <head>
+     <meta charset=""UTF-8"">    
+ </head>
+ <body>
+ <pre>
+http://msk10websvc2:8888/jservice/handbook/color
+ </pre>
+ </body>
+ </html>",NULL,NULL,NULL,,NULL,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <title>Title</title>
+	<style type=""text/css"">
+.key {  
+  color: #336; 
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+}
+.com {  
+  color: #8e0058; 
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+}
+pre {
+  background-color: #fcfcfc;
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+  margin-bottom: 10px;
+  max-height: 600px;
+  min-width: 40px;
+  max-width: 1900px;
+  white-space: pre-wrap;       /* CSS 3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  padding: 5px;
+}
+</style>
+</head>
+<body>
+<pre>
+структура сообщения:
+[{ 
+  <span class=""key"">""Description""</span>: ""аквамарин"",
+  <span class=""key"">""Code""</span>: ""АКВАМАРИН"",
+},
+{
+  <span class=""key"">""Description""</span>: ""Аметист"",
+  <span class=""key"">""Code""</span>: ""АМЕТИСТ"",
+}]
+			
+</pre>
+</body>
+</html>
+",NAV,btx,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+d9c2692b-9af4-d7ee-988e-845d91724ac2,1,"Hand-book: сорт винограда",NAV,"<!DOCTYPE html>
+<!DOCTYPE html>
+ <html lang=""en"">
+ <head>
+     <meta charset=""UTF-8"">    
+ </head>
+ <body>
+ <pre>
+ USE [SimpleERP]
+ GO
+ EXEC [dbo].[web_getHandBook ] @_type = 12
+ </pre>
+ </body>
+ </html>","<!DOCTYPE html>
+<!DOCTYPE html>
+ <html lang=""en"">
+ <head>
+     <meta charset=""UTF-8"">    
+ </head>
+ <body>
+ <pre>
+http://msk10websvc2:8888/jservice/handbook/grape_kind
+ </pre>
+ </body>
+ </html>",NULL,NULL,NULL,NULL,NULL,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <title>Title</title>
+	<style type=""text/css"">
+.key {  
+  color: #336; 
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+}
+.com {  
+  color: #8e0058; 
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+}
+pre {
+  background-color: #fcfcfc;
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+  margin-bottom: 10px;
+  max-height: 600px;
+  min-width: 40px;
+  max-width: 1900px;
+  white-space: pre-wrap;       /* CSS 3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  padding: 5px;
+}
+</style>
+</head>
+<body>
+<pre>
+структура сообщения:
+[
+	{
+		""Description"": """",
+		""Characteristic 1"": """",
+		""Code"": ""G"",
+		""Characteristic Short"": """"
+	}, {
+		""Description"": ""алиготе"",
+		""Characteristic 1"": """",
+		""Code"": ""G0010"",
+		""Characteristic Short"": """"
+	}, {
+		""Description"": ""альбариньо"",
+		""Characteristic 1"": ""Благородный белый сорт винограда Испании..."",
+		""Code"": ""G0020"",
+		""Characteristic Short"": ""Благородный белый сорт винограда...""
+	}, {
+		""Description"": ""альянико"",
+		""Characteristic 1"": ""Более 2500 лет назад греки привезли..."",
+		""Code"": ""G0030"",
+		""Characteristic Short"": ""Итальянский сорт винограда...""
+	}
+]		
+</pre>
+</body>
+</html>",NAV,btx,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+dcf3c4ab-dfdb-2c1e-38ad-f83093e69a19,1,"Hand-book: винтаж",NAV,"<!DOCTYPE html>
+<!DOCTYPE html>
+ <html lang=""en"">
+ <head>
+     <meta charset=""UTF-8"">    
+ </head>
+ <body>
+ <pre>
+ USE [SimpleERP]
+ GO
+ EXEC [dbo].[web_getHandBook ] @_type = 13
+ </pre>
+ </body>
+ </html>","<!DOCTYPE html>
+<!DOCTYPE html>
+ <html lang=""en"">
+ <head>
+     <meta charset=""UTF-8"">    
+ </head>
+ <body>
+ <pre>
+http://msk10websvc2:8888/jservice/handbook/rate_vintage
+ </pre>
+ </body>
+ </html>",NULL,NULL,NULL,NULL,NULL,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <title>Title</title>
+	<style type=""text/css"">
+.key {  
+  color: #336; 
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+}
+.com {  
+  color: #8e0058; 
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+}
+pre {
+  background-color: #fcfcfc;
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+  margin-bottom: 10px;
+  max-height: 600px;
+  min-width: 40px;
+  max-width: 1900px;
+  white-space: pre-wrap;       /* CSS 3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  padding: 5px;
+}
+</style>
+</head>
+<body>
+<pre>
+структура сообщения:
+[
+	{
+		""Description"": ""Исключительный"",
+		""Code"": ""1""
+	}, {
+		""Description"": ""Выдающийся"",
+		""Code"": ""2""
+	}, {
+		""Description"": ""Выше среднего"",
+		""Code"": ""3""
+	}, {
+		""Description"": ""Средний"",
+		""Code"": ""4""
+	}, {
+		""Description"": ""Необычный"",
+		""Code"": ""5""
+	}
+]	
+</pre>
+</body>
+</html>",NAV,btx,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+dd9b505c-1737-72a8-f657-00361276081a,1,"Hand-book: общие типы",NAV,"<!DOCTYPE html>
+<!DOCTYPE html>
+ <html lang=""en"">
+ <head>
+     <meta charset=""UTF-8"">    
+ </head>
+ <body>
+ <pre>
+ USE [SimpleERP]
+ GO
+ EXEC [dbo].[web_getHandBook ] @_type = 2
+ </pre>
+ </body>
+ </html>","<!DOCTYPE html>
+<!DOCTYPE html>
+ <html lang=""en"">
+ <head>
+     <meta charset=""UTF-8"">    
+ </head>
+ <body>
+ <pre>
+http://msk10websvc2:8888/jservice/handbook/wine_type
+ </pre>
+ </body>
+ </html>",NULL,NULL,NULL,NULL,NULL,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <title>Title</title>
+	<style type=""text/css"">
+.key {  
+  color: #336; 
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+}
+.com {  
+  color: #8e0058; 
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+}
+pre {
+  background-color: #fcfcfc;
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+  margin-bottom: 10px;
+  max-height: 600px;
+  min-width: 40px;
+  max-width: 1900px;
+  white-space: pre-wrap;       /* CSS 3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  padding: 5px;
+}
+</style>
+</head>
+<body>
+<pre>
+структура сообщения:
+[	{
+		""Description"": ""винные аксессуары"",
+		""Code"": ""WINE ACCESSORIES""
+	}, {
+		""Description"": ""бокал"",
+		""Code"": ""АКС_БОКАЛ""
+	}, {
+		""Description"": ""банка"",
+		""Code"": ""БАНКА""
+	}
+]			
+</pre>
+</body>
+</html>
+",NAV,btx,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+f19d1c23-7230-0b31-312f-62badb737130,1,"Hand-book: апелласьон",NAV,"<!DOCTYPE html>
+<!DOCTYPE html>
+ <html lang=""en"">
+ <head>
+     <meta charset=""UTF-8"">    
+ </head>
+ <body>
+ <pre>
+ USE [SimpleERP]
+ GO
+ EXEC [dbo].[web_getHandBook ] @_type = 15
+ </pre>
+ </body>
+ </html>","<!DOCTYPE html>
+<!DOCTYPE html>
+ <html lang=""en"">
+ <head>
+     <meta charset=""UTF-8"">    
+ </head>
+ <body>
+ <pre>
+http://msk10websvc2:8888/jservice/handbook/appelason
+ </pre>
+ </body>
+ </html>",NULL,NULL,NULL,NULL,NULL,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <title>Title</title>
+	<style type=""text/css"">
+.key {  
+  color: #336; 
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+}
+.com {  
+  color: #8e0058; 
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+}
+pre {
+  background-color: #fcfcfc;
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+  margin-bottom: 10px;
+  max-height: 600px;
+  min-width: 40px;
+  max-width: 1900px;
+  white-space: pre-wrap;       /* CSS 3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  padding: 5px;
+}
+</style>
+</head>
+<body>
+<pre>
+структура сообщения:
+[
+	{
+		""Characteristic 1"": """",
+		""Translate Description"": ""None"",
+		""Country Code"": """",
+		""Code"": ""0"",
+		""Characteristic Short"": """"
+	}, {
+		""Characteristic 1"": """",
+		""Translate Description"": ""Touraine Mesland AOC"",
+		""Country Code"": ""ФРА"",
+		""Code"": ""1"",
+		""Characteristic Short"": """"
+	}, {
+		""Characteristic 1"": """",
+		""Translate Description"": ""Monferrato DOC"",
+		""Country Code"": ""ИТА"",
+		""Code"": ""100"",
+		""Characteristic Short"": """"
+	}, {
+		""Characteristic 1"": """",
+		""Translate Description"": ""Marsala DOP"",
+		""Country Code"": ""ИТА"",
+		""Code"": ""1000"",
+		""Characteristic Short"": """"
+	}
+]
+</pre>
+</body>
+</html>",NAV,btx,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL

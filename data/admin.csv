@@ -1,0 +1,6 @@
+id,title,body,subtitle,link,img_fullpath,searching_tag1,searching_tag2,searching_tag3,searching_tag4,searching_tag5,searching_tag6,searching_tag7,searching_tag8,searching_tag9,searching_tag10,searching_tag11,searching_tag12,searching_tag13,searching_tag14,searching_tag15,searching_tag16,searching_tag17,searching_tag18,searching_tag19,searching_tag20
+1,"Демо. Диаграммы",,NULL,/admin/one/,../../assets/img/admin/pie-chart2.png,критично,оперативно,работоспособность,текущее,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+2,"Демо. Диаграммы",,NULL,/admin/two/,../../assets/img/admin/line-chart.png,регулярно,анализ,производительность,накопленное,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+3,"Демо. Диаграммы",NULL,NULL,/admin/three/,../../assets/img/admin/line-chart.png,регулярно,детализация,"гарантированная доставка",накопленное,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+4,"Демо. Диаграммы",NULL,NULL,/admin/four/,../../assets/img/admin/line3.png,критично,оперативно,загруженность,текущее,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+5,"Демо. Диаграммы",NULL,NULL,/admin/five/,../../assets/img/admin/line3.png,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL

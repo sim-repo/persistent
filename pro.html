@@ -1,0 +1,35 @@
+<customers>
+	<customer>
+		<cust_no>К001</cust_no>
+		<desc>Описание 1</desc>
+		<orders>
+			<order>
+				<order_no>З001</order_no>
+				<posting_date>2016-11-30T12:32:35.573</posting_date>
+				<amt>100.00</amt>
+			</order>
+		</orders>
+	</customer>
+</customers>
+
+
+cust_no	desc	order
+
+
+
+for(row: getAllRows()){
+	<tr>
+	drawTable(row,0);
+	</tr>
+}
+
+drawTable = function(parent_row,level){
+		for(child_row: getRow(parent_row,level)){
+			<tr>				
+			for(fld: getFields(child_row)){
+				<td>fld</td>
+			}
+			drawTable(child_row, level+1);
+			</tr>		
+		}
+}

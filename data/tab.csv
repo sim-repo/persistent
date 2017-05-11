@@ -1,0 +1,5 @@
+id,caption,searching_tag1,filter_model_class,icon_class
+admin,Админка,NULL,Admin,settings_applications
+api,Интеграция,NULL,Api,settings_input_component
+business,Мониторинг,NULL,UserReports,library_books
+news,Новости,NULL,News,fiber_new

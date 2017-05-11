@@ -1,0 +1,9 @@
+http://localhost:8037/front/async/get/json/nav/tag
+
+
+{"clazz":"LogBusMsg",
+"tag":"sp_test_Prime3r",
+"responseURI":"http://localhost:8037/client/listener/plain",
+"sqlTemplate":"EXEC dbo.web_GetSorderQueue  @_outerSorderId = 55101"
+}
+

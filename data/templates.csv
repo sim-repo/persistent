@@ -1,0 +1,2 @@
+id,desc,sql_template,link,searching_tag1,searching_tag2,searching_tag3,searching_tag4,searching_tag5,searching_tag6,searching_tag7,searching_tag8,searching_tag9,searching_tag10,searching_tag11,searching_tag12,searching_tag13,searching_tag14,searching_tag15,searching_tag16,searching_tag17,searching_tag18,searching_tag19,searching_tag20
+1,"Hot-логи рассылок","CALL `jdb`.`get_hotPub`();",/business/one/,рассылки,"горячие данные",операции,"часто используемые","за последний день",интеграция,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL

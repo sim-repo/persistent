@@ -1,0 +1,55 @@
+http://localhost:8077/front/async/add/json/nav/so
+
+{
+
+   "responseURI":"http://localhost:8077/client/listener_get_text_sorder_state",
+   "outerSorderId":"12345",
+   "responseContentType":"JsonPlainText",
+   "responseContractClass":"Status",
+
+"outerSorderId":"d3eee5534343",
+"outerCustomerId":"193feed7",
+"outerDate":"2016-08-18 00:00:00",
+"outerTime":"135604",
+"outerUserID":"SIMPLE\\vputin",
+
+"fullCustomerName":"ЛУКЬЯНОВ А.Ю. ",
+"salespersonCode": "АРИС_Е",
+
+
+"email":"unknown@gmail.com",
+"phoneNo":"+7(926)538-17-39",
+"phoneNo2":"+7(925)777-12-44",
+"contact":"Кашковская Ирина",
+"contact2":"",
+
+"sorderDate":"2016-09-01 00:00:00",
+"address":  "Ленинский район, сельское поселение ",
+"shipmentDate":"2016-08-25 00:00:00",
+"shipmentMethodCode":"ПУНКТ",
+"deliveryTimeFrom":"2016-08-20 14:30:00",
+"deliveryTimeTo":"2016-08-20 18:30:55",
+"preliminaryOrder":"0",
+"paymentTerms":"Н/Ф",
+
+"simpleWaters":"0",
+"wineShopCustomerNo":"К03584",
+"companyName":"СИМПЛ",
+
+"slList":[
+                {
+                               "outLineId":"1",
+                               "itemNo":"97466",
+                               "lineDiscountPercent":"10",
+                               "lineAmount":"15000",
+                               "quantity":100
+                },
+                {
+                              "outLineId":"2",
+                               "itemNo":"97466",
+                               "lineDiscountPercent":"10",
+                               "lineAmount":"15000",
+                               "quantity":100
+                }
+]
+}
